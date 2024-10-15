@@ -17,7 +17,7 @@ const overDiscount = 0.6;
 if (personAge > 65) ticketPrice *= overDiscount;
 if (personAge < 18) ticketPrice *= underDiscount;
 
-if (!isNaN(personAge) || !isNaN(tripLength)) {
+if (!isNaN(personAge) && !isNaN(tripLength)) {
   alert(
     `In base alla tua esigenza ed età il prezzo del biglietto è il seguente: ${ticketPrice.toFixed(
       2
